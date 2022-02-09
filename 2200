@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Name: 			 2200
+# By:					 julianorchard
+# Tag Added:	 09/02/2022
+# Desciption:  Loops through 2200 RTK list and calls build script
+
+  output_location="/d/output/" # I use this place, as /c/ is terrible on my machine
+# output_location="output/"
+
+  count=0
+  while read rtk_file 
+  do
+
+# To Title The File
+    count=$((${count} + 1))
+
+# Call ./build
+    ./build $rtk_file $count $output_location
+
+  done <src/RTK-2200

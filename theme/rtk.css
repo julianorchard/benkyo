@@ -1,0 +1,54 @@
+/*
+Name: 			 rtk.css
+By:					 julianorchard
+Tag Added:	 09/02/2022
+Desciption:  Backup of my theme to go with my 2200 cards (more info below).
+*/
+
+/*
+ * I use the following tags to very quickly
+ * change the cards appearance;
+ *  - <b>      Used for the main word associated with the kanji
+ *  - <i>      Used for the way/description to remember the kanji
+ *  - <u>      Used in body of description to highlight radicals used etc.
+ */
+
+  .card {
+    font-family: Times New Roman;
+    font-size: 18px;
+    text-align: center;
+    color: #111;
+    background-color: #efdfc1;
+    font-style: italic;
+  }
+  img {
+    max-width: 90%;
+  }
+  hr {
+    border: 1px dashed #999;
+  }
+
+/* Front Image Gets Smaller 
+   When Back Shown */
+  #front-small img {
+    max-width: 60%;
+  }
+
+/* Back */ 
+  #back {
+    padding: 10% 5% 5% 5%;
+    text-align: left;
+  }
+  #back b {
+    font-style: normal;
+    font-size: 22px;
+    font-family: Arial; 
+    padding-right: 10px;
+  }
+  #back u {
+    font-style: normal;
+  }
+  #back i {
+    margin-left: 20px;
+    font-style: normal;
+  }
