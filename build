@@ -1,0 +1,20 @@
+#!/bin/bash 
+
+# Name: 			 build
+# By:					 julianorchard
+# Tag Added:	 09/02/2022
+# Desciption:  Builds images of Kanji in the file using 4 fonts...
+
+
+## TODO:  Fonts from Google
+##        400px x 400px image
+##        source of files 
+
+# On Windows, Needs Magick
+#	magick convert -size 400x400 xc:white canvas.jpg
+  magick convert -size 400x400 xc:white \
+					-gravity NorthWest -stroke '#000C' -annotate 100x100 'pog' \
+					-gravity NorthEast -stroke '#000C' -annotate 0 'pog' \
+					-gravity SouthWest -stroke '#000C' -annotate 0 'pog' \
+					-gravity SouthEast -stroke '#000C' -annotate 0 'pog' \
+						pog.jpg
