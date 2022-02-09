@@ -1,4 +1,4 @@
-<img src="readme.jpg" align="center">
+<div align="center"><img src="readme.jpg"></div>
 <h1 align="center">日本語 Stuff</h1>
 
 I'm going to learn through the AJATT method.
