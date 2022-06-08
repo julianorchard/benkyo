@@ -1,16 +1,15 @@
 /*
-Name: 			 rtk.css
-By:					 julianorchard
-Tag Added:	 09/02/2022
-Desciption:  Backup of my theme to go with my 2200 cards (more info below).
+  Name:        rtk.css
+  Author:      julianorchard
+  Tag Added:   09/02/2022
+  Description: CSS for the Anki cards to match the images!
 */
 
 /*
- * I use the following tags to very quickly
- * change the cards appearance;
- *  - <b>      Used for the main word associated with the kanji
- *  - <i>      Used for the way/description to remember the kanji
- *  - <u>      Used in body of description to highlight radicals used etc.
+ * I use the following HTML tags to change the cards appearance;
+ *  - <b>   Used for the main word associated with the kanji
+ *  - <i>   Used for the way/description to remember the kanji
+ *  - <u>   Used in body of description to highlight radicals used etc.
  */
 
   .card {

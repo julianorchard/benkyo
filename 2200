@@ -1,21 +1,27 @@
 #!/bin/bash
 
-# Name: 			 2200
-# By:					 julianorchard
-# Tag Added:	 09/02/2022
-# Desciption:  Loops through 2200 RTK list and calls build script
+# File:        2200
+# Author:      Julian Orchard <hello@julianorchard.co.uk>
+# Tag Added:   2022-06-08
+# Description: Loops through kanji list and uses ./bin/build.sh script to generate.
 
-  output_location="/d/output/" # I use this place, as /c/ is terrible on my machine
-# output_location="output/"
+# requires the input location as an argument
+  if [ ! -z $1 ] ; then
+    input_location="$1"
+  else
+    echo "Please provide the input file location as an argument."
+    exit 0 
+  fi
+
+# you might want to change this, 
+# but I wanted it in this folder by default
+  output_location="./output/"
 
   count=0
-  while read rtk_file 
-  do
-
-# To Title The File
+  while read in_file ; do
+# we're counting to order the files nicely,
+# which was especially nice for RTK
     count=$((${count} + 1))
-
-# Call ./build
-    ./build $rtk_file $count $output_location
-
-  done <src/RTK-2200
+# build the card
+    ./bin/build.sh $in_file $count $output_location
+  done <$input_location
