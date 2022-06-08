@@ -1,18 +1,28 @@
-<div align="center"><img src="README.jpg"></div>
-<h1 align="center">日本語 Learning</h1>
+<div align="center">
+  <img src="example.jpg">
+</div>
+<h1 align="center">
+  日本語 Learning
+</h1>
+<p align="center">
+  <b>
+    <a href="https://github.com/julianorchard/benkyo/releases/tag/2200">
+      DOWNLOAD THE IMAGES HERE
+    </a>
+  </b>
+</p>
 
-[**IMAGE ZIP FILE HERE**](https://github.com/julianorchard/benkyo/releases/tag/2200)
+> I initially made these scripts in quite a rush
+> to get on with my person studying, but I've
+> subsequently had a chance to clean them up a
+> little bit! Enjoy...
 
-> Disclaimer:
-> These scripts were made in a rush of an evening,
-> but they do generate some very useful output.
+## What is this?
 
 Remembering The Kanji (RTK) is a method of
 learning to recognise the roughly 2,200 Jōyō
-kanji, where you [work through a
-book](https://en.wikipedia.org/wiki/Remembering_the_Kanji_and_Remembering_the_Hanzi). 
-
-This repo contains some scripts that generate some
+kanji, where you [work through a 
+book](https://en.wikipedia.org/wiki/Remembering_the_Kanji_and_Remembering_the_Hanzi). This repo contains some scripts that generate some
 nice looking [Anki
 cards](https://apps.ankiweb.net/) which I'm using
 to try and learn these characters! It also
@@ -24,20 +34,35 @@ images.
 Although I do own a physical copy of the book, the list of kanji I used to make these cards was originally in [this Reddit
 post](https://www.reddit.com/r/LearnJapanese/comments/1a126a/all_2200_kanji_from_heisigs_remembering_the_kanji/).
 
-## Running
+## Running your own
 
-If you want the script to run, you'll probably
-need the fonts installed, otherwise it'll need
-tweaking somewhat ;
+You will obviously only want to run your own
+if you want to generate a different set of
+characters to learn, otherwise you
+can just [download the images I generated...](https://github.com/julianorchard/benkyo/releases/tag/2200)!
 
-- [Meiryo](https://docs.microsoft.com/en-us/typography/font-list/meiryo)
-- [Noto Serif JP](https://fonts.google.com/noto/specimen/Noto+Serif+JP)
-- [Yuji Mai](https://fonts.google.com/specimen/Yuji+Mai)
-- [BIZ UDGothic](https://docs.microsoft.com/en-us/typography/font-list/biz-udgothic)
+With that in mind, if you're aiming to recreate this exact style of
+image (for Japanese learning specifically), you
+just need to install these:
 
-If you're looking to run this script, it's
-probably to generate new characters (otherwise you
-can just [download the images I generated...](https://github.com/julianorchard/benkyo/releases/tag/2200)), so just
-replace the file in [2200](2200) with the location you
-want. Each character needs to be on a new line.
+- [Meiryo](https://docs.microsoft.com/en-us/typography/font-list/meiryo), Microsoft
+- [Noto Serif JP](https://fonts.google.com/noto/specimen/Noto+Serif+JP), Google Fonts
+- [Yuji Mai](https://fonts.google.com/specimen/Yuji+Mai), Google Fonts
+- [BIZ UDGothic](https://docs.microsoft.com/en-us/typography/font-list/biz-udgothic), Microsoft
+
+Then you can run the script called `2200` with an
+argument pointing at the input file location. For
+example, to run mine it's:
+
+```bash
+./2200 src/RTK-2200
+```
+
+You can change the output location by editing the
+`2200` script. It outputs to `output/` by default!
+
+Otherwise you'll have to edit the file in
+`src/build.sh` to reference the new fonts you want
+to use. Likewise, colours of the images generated
+would have to be changed in that file.
 

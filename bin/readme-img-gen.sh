@@ -12,5 +12,5 @@
     echo "Selected; ${file}"
     cp output/${file} output/tmp/${file}
   done
-  magick montage output/tmp/*.jpg README.jpg
+  magick montage output/tmp/*.jpg example.jpg
   rm -r output/tmp/
