@@ -7,7 +7,7 @@
 <p align="center">
   <b>
     <a href="https://github.com/julianorchard/benkyo/releases/tag/2200">
-      DOWNLOAD THE IMAGES HERE
+      DOWNLOAD THE 2,200 IMAGES HERE!
     </a>
   </b>
 </p>
@@ -21,7 +21,7 @@
 
 Remembering The Kanji (RTK) is a method of
 learning to recognise the roughly 2,200 Jōyō
-kanji, where you [work through a 
+kanji, where you [work through a
 book](https://en.wikipedia.org/wiki/Remembering_the_Kanji_and_Remembering_the_Hanzi). This repo contains some scripts that generate some
 nice looking [Anki
 cards](https://apps.ankiweb.net/) which I'm using
@@ -50,16 +50,16 @@ just need to install these:
 - [Yuji Mai](https://fonts.google.com/specimen/Yuji+Mai), Google Fonts
 - [BIZ UDGothic](https://docs.microsoft.com/en-us/typography/font-list/biz-udgothic), Microsoft
 
-Then you can run the script called `2200` with an
+Then you can run the script called `benkyou` with an
 argument pointing at the input file location. For
 example, to run mine it's:
 
 ```bash
-./2200 src/RTK-2200
+./benkyou src/RTK-2200
 ```
 
 You can change the output location by editing the
-`2200` script. It outputs to `output/` by default!
+`benkyou` script. It outputs to `output/` by default!
 
 Otherwise you'll have to edit the file in
 `src/build.sh` to reference the new fonts you want
